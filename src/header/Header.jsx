@@ -1,14 +1,17 @@
-import Dropdown from "./Dropdown"
+import Dropdown from "./Dropdown";
+
 
 const Header = () => {
     return (
         <div className="header">
-            <p className="header-text">Mike's corner</p>
-
-            <Dropdown/>
-
+          <div className="overlay">
+            <div className="header-top">
+              <p className="header-text">Mike's corner</p>
+              <Dropdown />
+            </div>
+          </div>
         </div>
-    )
-}
+      );
+};
 
-export default Header
+export default Header;
